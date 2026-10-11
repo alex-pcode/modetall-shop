@@ -58,7 +58,7 @@ nav.main a:hover{color:var(--denim-d)}
 .hero .facts b{color:#fff}.hero .facts{color:rgba(255,255,255,.8)}
 .facts{display:flex;gap:28px;flex-wrap:wrap;font-size:14px;margin-top:6px}
 .facts b{display:block;font-family:'Bodoni Moda',serif;font-size:30px;font-weight:500;line-height:1}
-@media(max-width:900px){.hero{min-height:760px}.hero .copy{align-self:end;padding:120px 20px 32px;gap:16px}.hero .pics::after{background:linear-gradient(0deg,rgba(10,10,10,.9) 0%,rgba(10,10,10,.72) 42%,rgba(10,10,10,.15) 70%,rgba(10,10,10,0) 85%)}.hero p.lead{font-size:16px}.hero .ctas{flex-wrap:nowrap}.hero .ctas .btn{flex:1 1 0;padding:14px 8px;font-size:12.5px;letter-spacing:.04em}}
+@media(max-width:900px){.hero{min-height:760px}.hero .pics{grid-template-columns:1fr}.hero .pics img:nth-child(2){display:none}.hero .pics img{object-position:center top}.hero .copy{align-self:end;padding:120px 20px 32px;gap:16px}.hero .pics::after{background:linear-gradient(0deg,rgba(10,10,10,.9) 0%,rgba(10,10,10,.72) 42%,rgba(10,10,10,.15) 70%,rgba(10,10,10,0) 85%)}.hero p.lead{font-size:16px}.hero .ctas{flex-wrap:nowrap}.hero .ctas .btn{flex:1 1 0;padding:14px 8px;font-size:12.5px;letter-spacing:.04em}}
 /* sections */
 section{padding:84px 0}
 .sh{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:34px;flex-wrap:wrap}
@@ -77,9 +77,9 @@ section{padding:84px 0}
 .card h3{font-size:20px;line-height:1.15;margin-top:14px}
 .card h3 a{text-decoration:none}
 .card .meta{font-size:13px;color:var(--muted);margin-top:4px}
-.card .pr{font-weight:900;margin-top:6px;font-size:16px}
+.card .pr{font-weight:900;margin-top:auto;padding-top:8px;font-size:16px}
 .card .pr s{color:var(--muted);font-weight:400;margin-left:6px;font-size:14px}
-.card .buy{display:flex;flex-direction:column;gap:8px;margin-top:12px}
+.card .buy{display:flex;flex-direction:column;justify-content:flex-end;gap:8px;margin-top:12px;min-height:89px}
 .card select{width:100%;padding:10px;border:1px solid var(--line);background:#fff;font:14px Lato}
 .card .btn{padding:12px 10px;font-size:12px;width:100%}
 /* fit band */
